@@ -60,3 +60,18 @@ navLinks.forEach(link => {
     navUl.classList.remove("open");
   });
 });
+
+// 1. Krijo observer-in SË PARI
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+
+// 2. Pastaj selekto dhe vëzhgo elementët .hidden
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
