@@ -446,7 +446,7 @@ footer {
     background-color: rgba(0, 0, 0, 0.9);
     padding: 20px;
     gap: 20px;
-    transform: translateY(-200%);
+    transform: translateY(-1%);
     opacity: 0;
     pointer-events: none;
     transition: 0.4s ease;
@@ -454,8 +454,8 @@ footer {
 
   nav ul.open {
     transform: translateY(0);
-    opacity: 1;
     pointer-events: auto;
+    opacity: 1;
   }
   .about-right{
     text-align: center;
