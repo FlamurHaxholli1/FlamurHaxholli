@@ -282,6 +282,7 @@ nav ul li a:hover {
   box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
   transition: transform 0.3s ease;
   position: relative;
+  cursor: pointer;
 }
 
 .project-card:hover {
@@ -419,6 +420,9 @@ footer {
 }
 
 @media (max-width: 646.4px) {
+  .intro-right{
+    text-align: center;
+  }
   .menu-toggle {
     display: flex; /* ndryshimi: gjithmonë shfaqet në ekran të vogël */
   }
@@ -469,4 +473,25 @@ footer {
  opacity: 1;
  filter: blur(0); 
  transform: translateX(0);
+}
+.tech-icons:nth-child(2) {
+  transition-delay: 200ms;
+}
+.tech-icons:nth-child(3) {
+  transition-delay: 400ms;
+}
+.tech-icons:nth-child(4) {
+  transition-delay: 600ms;
+}
+.tech-icons:nth-child(5) {
+  transition-delay: 800ms;
+}
+.tech-icons:nth-child(6) {
+  transition-delay: 1000ms;
+}
+.tech-icons:nth-child(7) {
+  transition-delay: 1200ms;
+}
+.tech-icons:nth-child(8) {
+  transition-delay: 1400ms;
 }
