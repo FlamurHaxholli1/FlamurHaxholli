@@ -30,14 +30,20 @@ form.addEventListener("submit", function (e) {
   e.preventDefault();
 
   const formData = new FormData(form);
-  fetch("https://formsubmit.co/flamurhaxholli6@gmail.com", {
+  fetch(form.action, {
     method: "POST",
-    body: formData
+    body: formData,
+    headers: {
+      'Accept': 'application/json'
+    }
   })
     .then(response => {
       if (response.ok) {
         form.reset();
         successMessage.style.display = "block";
+        setTimeout(() => {
+          successMessage.style.display = "none";
+        }, 5000); // mesazhi fshihet pas 5 sekondash
       } else {
         alert("Something went wrong. Please try again.");
       }
@@ -46,6 +52,7 @@ form.addEventListener("submit", function (e) {
       alert("Error: " + error.message);
     });
 });
+
 
 // Hamburger menu toggle
 menuIcon.addEventListener("click", () => {

@@ -11,7 +11,7 @@
 <body>
   <header>
     <nav>
-      <div class="logo">Fh<span id="dot">.</span></div>
+      <div class="logo">Fh</div>
 <div class="menu-toggle" id="menu-toggle">
   <span class="bar"></span>
   <span class="bar"></span>
@@ -167,20 +167,19 @@
 
 <!-- CONTACT SECTION -->
 <section id="contact" class="section">
-
-    <h2 class="section-title">Contact me</h2>
-<form action="https://formsubmit.co/flamurhaxholli6@gmail.com" method="POST" class="contact-form hidden">
-  <input type="text" name="first_name" placeholder="First Name" required>
-  <input type="text" name="last_name" placeholder="Last Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-  <button type="submit">Send Message</button>
-</form>
-<p id="success-message" style="display: none; color: green; font-weight: bold; margin-top: 10px;">
-  ✅ The message was sent successfully. Thank you!
-</p>
-
+  <h2 class="section-title">Contact me</h2>
+  <form id="contact-form" action="https://formspree.io/f/xdkdzlle" method="POST" class="contact-form">
+    <input type="text" name="first_name" placeholder="First Name" required>
+    <input type="text" name="last_name" placeholder="Last Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p id="success-message" style="display: none; color: green; font-weight: bold; margin-top: 10px;">
+    ✅ The message was sent successfully. Thank you!
+  </p>
 </section>
+
 
   </main>
 
@@ -188,7 +187,6 @@
     <p>&copy; 2025 Flamur Haxholli. All rights reserved.</p>
   </footer>
 
-  <a href="#home" class="go-up"></a>
 
   <script src="index.js"></script>
 </body>
